@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7EC;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #D870AD;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #D870AD;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #5C4033;
+    line-height: 1.7;
+}
+
+.note {
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+    background: #E88AB5;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 28px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #C85A9D;
+    transform: translateY(-3px);
+}
+
+#cover-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.cover-container {
+    background: #FFFDF8;
+    max-width: 800px;
+    width: 100%;
+    padding: 80px 40px;
+    border-radius: 20px;
+    border: 8px solid #E88AB5;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+}
+
+.cover-message {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+#cover-page h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+#cover-page h2 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #cover-page h1 {
+        font-size: 2.8rem;
+    }
+
+    .cover-container {
+        padding: 50px 25px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* Allows decorations to sit inside the scrapbook cover */
+
+
+/* Creates small pink tape decorations */
+.tape {
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    background: rgba(255, 192, 203, 0.55);
+    border: 1px solid rgba(255, 160, 180, 0.6);
+    transform: rotate(-12deg);
+}
+
+/* Top left tape position */
+.tape-left {
+    top: 25px;
+    left: 35px;
+}
+
+/* Top right tape position */
+.tape-right {
+    top: 25px;
+    right: 35px;
+    transform: rotate(12deg);
+}
+
+/* Shared heart styling */
+.heart {
+    position: absolute;
+    color: #E88AB5;
+    font-size: 3rem;
+    opacity: 0.7;
+}
+
+/* First heart position */
+.heart-one {
+    bottom: 35px;
+    left: 45px;
+}
+
+/* Second heart position */
+.heart-two {
+    bottom: 35px;
+    right: 45px;
+    transform: rotate(15deg);
+}
